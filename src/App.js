@@ -1,10 +1,11 @@
 import React from 'react';
 import './App.css';
+import JerseyContainer from './components/JerseyContainer';
 
 function App() {
   return (
-    <div>
-      <h1>hello</h1>
+    <div className="App">
+      <JerseyContainer />
     </div>
   );
 }
