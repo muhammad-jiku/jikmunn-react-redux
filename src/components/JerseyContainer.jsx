@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { buyJersey } from '../redux/actionCreator';
+import { buyJersey } from '../redux/actionCreator/index';
 
 const JerseyContainer = (props) => {
   console.log(props);
