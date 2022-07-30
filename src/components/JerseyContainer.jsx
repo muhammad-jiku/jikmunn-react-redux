@@ -14,7 +14,7 @@ const JerseyContainer = (props) => {
 
 const mapStateToProps = (state) => {
   return {
-    numOfJersey: state.numOfJersey,
+    numOfJersey: state.jersey.numOfJersey,
   };
 };
 

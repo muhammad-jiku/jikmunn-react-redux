@@ -1,7 +1,6 @@
 import { createStore } from 'redux';
-import jerseyReducer from '../jersey/JerseyReducers';
+import rootReducer from './rootReducer';
 
-const store = createStore(jerseyReducer);
-console.log(store, jerseyReducer);
+const store = createStore(rootReducer);
 
 export default store;

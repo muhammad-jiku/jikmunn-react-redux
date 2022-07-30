@@ -3,7 +3,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { buyJersey } from '../redux/actionCreator/index';
 
 const HooksJerseyContainer = () => {
-  const numOfJersey = useSelector((state) => state.numOfJersey); //useSelector is added to access initialState
+  const numOfJersey = useSelector((state) => state.jersey.numOfJersey); //useSelector is added to access initialState
   const dispatch = useDispatch(); // useDispatch is used for taking the action based on action type case
 
   return (
