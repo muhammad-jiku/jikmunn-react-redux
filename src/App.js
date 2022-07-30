@@ -1,12 +1,18 @@
 import React from 'react';
 import './App.css';
-import JerseyContainer from './components/JerseyContainer';
+import HooksJerseyContainer from './components/HooksJerseyContainer';
+// import JerseyContainer from './components/JerseyContainer';
+import { Provider } from 'react-redux';
+import store from './redux/store/index';
 
 function App() {
   return (
-    <div className="App">
-      <JerseyContainer />
-    </div>
+    <Provider store={store}>
+      <div className="App">
+        {/* <JerseyContainer /> */}
+        <HooksJerseyContainer />
+      </div>
+    </Provider>
   );
 }
 

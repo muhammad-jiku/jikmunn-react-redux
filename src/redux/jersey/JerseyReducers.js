@@ -1,7 +1,7 @@
 import { BUY_JERSEY } from './JerseyTypes';
 
 const initialState = {
-  numOfJersy: 10,
+  numOfJersey: 10,
 };
 
 const jerseyReducer = (state = initialState, action) => {
@@ -10,7 +10,7 @@ const jerseyReducer = (state = initialState, action) => {
     case BUY_JERSEY:
       return {
         ...state,
-        numOfJersy: state.numOfJersy - 1,
+        numOfJersey: state.numOfJersey - 1,
       };
     default:
       return state;
