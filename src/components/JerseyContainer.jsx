@@ -1,12 +1,27 @@
 import React from 'react';
+import { connect } from 'react-redux';
+import { buyJersey } from '../redux/actionCreator';
 
-const JerseyContainer = () => {
+const JerseyContainer = (props) => {
+  console.log(props);
   return (
     <div>
-      <h1>Number of jersey: 10</h1>
-      <button>Buy Jersey</button>
+      <h1>Number of jersey: {props.numOfJersey}</h1>
+      <button onClick={props.buyJersey}>Buy Jersey</button>
     </div>
   );
 };
 
-export default JerseyContainer;
+const mapStateToProps = (state) => {
+  return {
+    numOfJersey: state.numOfJersey,
+  };
+};
+
+const mapDispatchToProps = (dispatch) => {
+  return {
+    buyJersey: () => dispatch(buyJersey()),
+  };
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(JerseyContainer);

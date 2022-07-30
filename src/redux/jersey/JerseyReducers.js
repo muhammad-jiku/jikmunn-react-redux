@@ -5,6 +5,7 @@ const initialState = {
 };
 
 const jerseyReducer = (state = initialState, action) => {
+  console.log(state);
   switch (action.type) {
     case BUY_JERSEY:
       return {
