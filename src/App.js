@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import HooksJerseyContainer from './components/HooksJerseyContainer';
 import HooksKitContainer from './components/HooksKitContainer';
+import ItemContainer from './components/ItemContainer';
 import JerseyContainer from './components/JerseyContainer';
 import KitContainer from './components/KitContainer';
 import NewKitContainer from './components/NewKitContainer';
@@ -12,6 +13,8 @@ function App() {
   return (
     // <Provider store={store}>
     <div className="App">
+      <ItemContainer jersey />
+      <ItemContainer />
       <JerseyContainer />
       <HooksJerseyContainer />
       <KitContainer />
