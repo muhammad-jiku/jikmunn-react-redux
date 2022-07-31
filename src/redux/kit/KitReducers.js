@@ -10,7 +10,7 @@ const kitReducer = (state = initialState, action) => {
     case BUY_KIT:
       return {
         ...state,
-        numOfKit: state.numOfKit - 2,
+        numOfKit: state.numOfKit - action.payload,
       };
     default:
       return state;
